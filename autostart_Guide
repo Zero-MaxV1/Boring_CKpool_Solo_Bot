@@ -1,10 +1,10 @@
-Create the Service File
+## Create the Service File
 Bash
 sudo nano /etc/systemd/system/boring_bot.service
 
 
 
-Paste this Configuration
+## Paste this Configuration
 (Adjust the User and Path if they differ from your home defaults)
 
 Ini, TOML
@@ -24,7 +24,7 @@ RestartSec=5
 WantedBy=multi-user.target
 
 
-Commands to activate
+## Commands to activate
 sudo systemctl daemon-reload
 sudo systemctl enable boring_bot.service
 sudo systemctl start boring_bot.service
